@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .date-input {
+        background-color: lightgray;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+      }
+      .change-button {
+        margin-top: 30px;
+      }
+      .image-box {
+        width: 100%;
+        height: auto;
+      }
+      .change-date {
+        margin-top: 30px;
+      }
+      .create-image {
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+      }
+    </style>
+    <title>js/jQuery課題8</title>
+  </head>
+  <body>
+    <header class="header">画像リサイズ</header>
+    <div class="container">
+      <p>画面読み込み：</p>
+      <div class="box">
+        <input type="file" id="choice-button" class="choice-button" />
+        <!-- <span id="choice-text">選択されていません</span> -->
+        <div id="image-box" class="image-box">
+          <img id="image" alt="ユーザーが選択した画像ファイル" />
+        </div>
+      </div>
+      <div class="date-box">
+        <p>読み込んだ画像のサイズ：</p>
+        <div class="load-date">
+          <span>高さ：</span
+          ><input
+            class="load-date-input"
+            id="load-date-height"
+            name="load-date-height"
+            type="text"
+          /><span>x 横幅：</span
+          ><input
+            class="load-date-input"
+            id="load-date-width"
+            name="load-date-width"
+            type="text"
+          /><span>ピクセル</span>
+        </div>
+
+        <div class="change-date">
+          <p class="change-text">変更後の画像のサイズ：</p>
+          <span>高さ：</span
+          ><input
+            class="date-input"
+            id="change-date-height"
+            name="change-date-height"
+            type="text"
+          /><span>x 横幅：</span
+          ><input
+            class="date-input"
+            id="change-date-width"
+            name="change-date-width"
+            type="text"
+          /><span>ピクセル</span>
+        </div>
+      </div>
+      <div class="button-box" id="button-box">
+        <button class="change-button" id="change-button">画像リサイズ</button>
+      </div>
+    </div>
+    <div class="create-image" id="create-image"></div>
+    <!-- <canvas class="create-image" id="create-image"></canvas> -->
+    <script src="js/task_works_8_1.js"></script>
+  </body>
+</html>
